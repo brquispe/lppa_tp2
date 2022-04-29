@@ -1,0 +1,150 @@
+:root {
+  --color-bg: #FFF;
+  --color-btn: #F2F2F2;
+}
+
+.body {
+  background-color: var(--color-bg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article.article {
+  margin: 0 2.5rem;
+}
+
+header {
+  border-bottom: 1px solid #E4E4E4;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__nav {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__nav li {
+  margin: 0 1rem;
+}
+
+.navbar__nav__btn button:hover{
+  cursor: pointer;
+  color: #126fff;
+}
+
+.navbar__nav__btn button span{
+  margin: 0 .25rem 0 0;
+}
+
+.navbar__nav__btn a,
+.navbar__nav__btn button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .75rem;
+  padding: .75rem 1rem;
+  border: none;
+  border-radius: .25rem;
+  color: #272727;
+  font-weight: bold;
+  background-color: var(--color-btn);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all .2s;
+}
+
+.navbar__nav__btn--subs a {
+  background-color: #FFFF24;
+  border: 1px solid #ccc;
+}
+
+.navbar__nav__btn--subs a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+a.btn_link {
+  background-color: #FFF;
+  color: #0250C9;
+  border: 1px solid #0250C9;
+  /* padding: 0.25rem; */
+  display: block;
+  padding: .75rem 1rem;
+  transition: all .2s;
+  font-weight: bold;
+  border-radius: .25rem;
+}
+
+
+a.btn_link:hover {
+  background-color: #126FFF;
+  color: #fff;
+}
+
+.author_info {
+  display: flex;
+  margin: 1rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.author_info a {
+  text-decoration: none;
+}
+
+.author_info .ln {
+  color: #919191;
+}
+
+.author_info img.pic {
+  margin-right: .5rem;
+}
+
+img.pic {
+  border-radius: 50%;
+  background-color: #ccc;
+  height: 80px;
+}
+
+h2.subheading {
+  font-weight: 500;
+}
+
+.logo svg {
+  display: block;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+figcaption {
+  margin: .75rem 0;
+}
+
+figure img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+article a {
+  color: #0250C9;
+}
+
+
+.btn_link_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
