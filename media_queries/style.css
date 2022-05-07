@@ -1,0 +1,313 @@
+:root {
+  --color-bg: #fff;
+  --color-btn: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+article.article .article__wrapper {
+  padding: 0 1rem;
+}
+
+header {
+  border-bottom: 1px solid #e4e4e4;
+  top: 0;
+  background-color: var(--color-bg);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem;
+}
+
+.footer {
+  bottom: 0;
+  position: sticky;
+  border-top: 1px solid #f2f2f2;
+  background-color: var(--color-bg);
+  width: 100%;
+}
+
+.footer ul {
+  display: flex;
+  padding: 1rem;
+  margin: auto;
+  list-style: none;
+  justify-content: space-between;
+  max-width: 25rem;
+}
+
+.footer ul a {
+  color: #000;
+  font-size: 0.6875rem;
+}
+
+.footer li {
+  display: flex;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar .logo {
+  order: 1;
+  height: 1.0625rem;
+  display: block;
+  flex: 1;
+}
+
+.btn_sections__wrapper {
+  display: none;
+}
+
+.navbar .sections {
+  order: 3;
+  margin: 0;
+  padding: 0;
+}
+
+#btn_sections {
+  display: none;
+}
+
+#btn_login {
+  display: none;
+}
+
+.navbar .auth {
+  order: 2;
+}
+
+.navbar__nav {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__nav li {
+  margin: 0 1rem;
+}
+
+.navbar__nav__btn button:hover {
+  cursor: pointer;
+  color: #126fff;
+}
+
+.navbar__nav__btn button span {
+  margin: 0 0.25rem 0 0;
+}
+
+.navbar__nav__btn a,
+.navbar__nav__btn button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: #272727;
+  font-weight: bold;
+  background-color: var(--color-btn);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.navbar__nav__btn--subs a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+a.btn_link {
+  background-color: #fff;
+  color: #0250c9;
+  border: 1px solid #0250c9;
+  /* padding: 0.25rem; */
+  display: block;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+a.btn_link:hover {
+  background-color: #126fff;
+  color: #fff;
+}
+
+.author_info {
+  display: flex;
+  margin: 1rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.author_info a {
+  text-decoration: none;
+}
+
+.author_info .ln {
+  color: #919191;
+}
+
+.author_info img.pic {
+  margin-right: 0.5rem;
+}
+
+img.pic {
+  border-radius: 50%;
+  background-color: #ccc;
+  height: 80px;
+}
+
+h2.subheading {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.logo svg {
+  display: block;
+  height: 100%;
+  justify-self: start;
+}
+
+figure {
+  margin: 0 -1rem;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+figcaption {
+  padding: 0 1rem 0.5rem;
+}
+
+figure img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+article a,
+#btn_sub a {
+  color: #0250c9;
+}
+
+.btn_link_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.btn_search,
+#btn_sub a {
+  background-color: transparent;
+}
+
+li#btn_sub {
+  padding: 0;
+  margin: 0;
+}
+
+button.btn_search {
+  padding: 0;
+}
+
+.btn_search .label {
+  display: none;
+}
+
+h1.heading {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  article.article .article__wrapper {
+    padding: 0 2.5rem;
+  }
+
+  header {
+    position: sticky;
+  }
+
+  h1.heading {
+    font-size: 3rem;
+  }
+
+  h2.subheading {
+    font-size: 1.25rem;
+  }
+
+  .navbar__nav__btn--subs {
+    background-color: #ffff24;
+  }
+  .navbar__nav__btn--subs a {
+    background-color: #ffff24;
+    border: 1px solid #ccc;
+  }
+
+  .navbar .sections {
+    order: 1;
+  }
+
+  .navbar .logo {
+    order: 2;
+  }
+
+  .navbar .auth {
+    order: 3;
+  }
+
+  .btn_search .label {
+    display: block;
+  }
+
+  .btn_sections__wrapper {
+    display: block;
+  }
+
+  #btn_sections {
+    display: block;
+  }
+
+  #btn_login {
+    display: block;
+  }
+
+  button.btn_search{
+    background-color: var(--color-btn);
+  }
+
+  button.btn_search {
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar .logo {
+    height: 1.875rem;
+  }
+
+  .navbar .logo svg {
+    margin: auto;
+  }
+
+  figure {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  .footer {
+    display: none;
+  }
+}
